@@ -20,6 +20,7 @@ This is Mobile Shop for ESX Server's
 
 ### Commands
 **/setsim [First Name] [Last Name] [New Number]**
+
 **/getsim [Now Number]**
 
 ### About this script
