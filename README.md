@@ -9,6 +9,8 @@ This is Mobile Shop for ESX Server's
   * [esx_addoninventory](https://github.com/ESX-Org/esx_addoninventory)
   * [esx_datastore](https://github.com/ESX-Org/esx_datastore)
   * [esx_society](https://github.com/ESX-Org/esx_society)
+* Phone
+   * [gcphone](https://github.com/N3MTV/gcphone)
 * Optional
    * [esx_doorlock](https://github.com/esx-community/esx_doorlock)
   * [Phone Shop Map](https://forum.cfx.re/t/vodafone-store-mlo/1435158)
