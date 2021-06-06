@@ -1,0 +1,10 @@
+	{
+		objHash = -1091027173,
+		objCoords = vector3(-657.19, -855.13, 23.51),
+		objHeading = 0.0,
+		textCoords = vector3(-657.19, -855.13, 24.51),
+		authorizedJobs = {'phoner'},
+		locked = true,
+		maxDistance = 12,
+		size = 2
+	},
