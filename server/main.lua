@@ -47,14 +47,14 @@ AddEventHandler('esx_phonejob:BuyItem', function (item)
             xPlayer.removeMoney(Config.RadioPrice)
             xPlayer.addInventoryItem('radio', 1)
         else
-            TriggerClientEvent('chatMessage', source, "[SYSTEM]", {255, 0, 0}, _U('not_enough'))
+            TriggerClientEvent('chatMessage', source, "[SYSTEM]", {255, 0, 0}, "You Don't Have enough money !! "))
         end
     elseif item == 'phone' then
         if xPlayer.getMoney() >= Config.PhonePrice then
             xPlayer.removeMoney(Config.PhonePrice)
             xPlayer.addInventoryItem('phone', 1)
         else
-            TriggerClientEvent('chatMessage', source, "[SYSTEM]", {255, 0, 0}, "Shoma Pool Kafi Nadarad")
+            TriggerClientEvent('chatMessage', source, "[SYSTEM]", {255, 0, 0}, "You Don't Have enough money !! "))
         end
     end
 end)
