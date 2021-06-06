@@ -26,7 +26,7 @@ This is Mobile Shop for ESX Server's
 **/getsim [Now Number]**
 
 ### About this script
-This script work with your (ESX) server & you can make more job (for RolePlay) in your server for example you can change sim card numer of player or get player name with sim card number
+This script work with your (ESX) server & you can make more job (for RolePlay) in your server for example you can change sim card numer of player or get player name with sim card number + inventory + boss action
 
 `Copyright © Amirreza Jaberi`
 `All rights reserved`
