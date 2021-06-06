@@ -13,7 +13,7 @@ This is Mobile Shop for ESX Server's
    * [gcphone](https://github.com/N3MTV/gcphone)
 * Optional
    * [esx_doorlock](https://github.com/esx-community/esx_doorlock)
-  * [Phone Shop Map](https://forum.cfx.re/t/vodafone-store-mlo/1435158)
+   * [Phone Shop Map](https://forum.cfx.re/t/vodafone-store-mlo/1435158)
 
 ### Install
 - Import `esx_phoneshop.sql` in your database
@@ -21,7 +21,7 @@ This is Mobile Shop for ESX Server's
 - if you use optional add `doorlock.txt` in your `esx_doorlock/config.lua`
 
 ### Commands
-**/setsim [First Name] [Last Name] [New Number]**
+**/setsim [ID] [New Number]**
 
 **/getsim [Now Number]**
 
