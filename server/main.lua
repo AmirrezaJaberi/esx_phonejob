@@ -4,15 +4,16 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 RegisterCommand('setsim', function (source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
+    local xTarget = ESX.GetPlayerFromId(args[1])
     if xPlayer.job.name == "phoner" then
-         MySQL.Async.execute('UPDATE users SET phone_number = @phone_number WHERE firstname = @firstname lastname = @lastname', {
-            ['@firstname']          = args[1],
-            ['@lastname']           = args[2],
-            ['@phone_number']       = tonumber(args[3]),
+        
+         MySQL.Async.execute('UPDATE users SET phone_number = @phone_number WHERE identifier = @identifier', {
+             ['@identifier']         = xTarget.identifier,
+             ['@phone_number']       = args[2]
             }, function(rowsChanged)
                 StopResource('gcphone')
                 StartResource('gcphone')
-                print('^'..math.random(1, 9)..'['..GetCurrentResourceName()..']^0 Player ^3'..args[1]..' '..args[2]..'^0 Phone Number : ^1'..tonumber(args[3])..'^0')
+               print('^'..math.random(1, 9)..'['..GetCurrentResourceName()..']^0 Player ^3'..xPlayer.getName()..'^0 Phone Number : ^1'..args[2]..'^0')
             end)
         else
         TriggerClientEvent('chatMessage', source, "[SYSTEM]", {255, 0, 0}, _U('not_phoner'))
@@ -56,9 +57,4 @@ AddEventHandler('esx_phonejob:BuyItem', function (item)
             TriggerClientEvent('chatMessage', source, "[SYSTEM]", {255, 0, 0}, "Shoma Pool Kafi Nadarad")
         end
     end
-end)
-
-ESX.RegisterServerCallback('esx_phonejob:GetJobName', function(source, cb, job)
-    local xPlayer = ESX.GetPlayerFromId(source)
-    cb(xPlayer)
 end)
