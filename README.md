@@ -26,4 +26,4 @@ This is Mobile Shop for ESX Server's
 ### About this script
 This script work with your (ESX) server & you can make more job (for RolePlay) in your server for example you can change sim card numer of player or get player name with sim card number
 
-Copyright © Amirreza Jaberi    All rights reserved    Even if 'All rights reserved' is very clear
+`Copyright © Amirreza Jaberi    All rights reserved    Even if 'All rights reserved' is very clear`
