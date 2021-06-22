@@ -3,11 +3,11 @@ local PlayerData                = {}
 Citizen.CreateThread(function()
 	while ESX == nil do
 		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-		Citizen.Wait(10)
+		Citizen.Wait(0)
 	end
 
 	while ESX.GetPlayerData().job == nil do
-		Citizen.Wait(100)
+		Citizen.Wait(10)
 	end
 
 	PlayerData = ESX.GetPlayerData()
