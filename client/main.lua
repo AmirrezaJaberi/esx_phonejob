@@ -135,6 +135,7 @@ end
 
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function(xPlayer)
+PlayerData.job = job
   if xPlayer.job.name == "phoner" then
       TriggerEvent('esx_phonejob:addSuggestions', xPlayer.source)
   end
