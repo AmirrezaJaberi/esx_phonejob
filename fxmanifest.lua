@@ -5,7 +5,7 @@ author 'AmIrReZa#2080'
 description 'ESX Phone Job'
 version '1.0.0'
 
-
+shared_script '@es_extended/imports.lua'
 
 server_scripts {
 	'@mysql-async/lib/MySQL.lua',
